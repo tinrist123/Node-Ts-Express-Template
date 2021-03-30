@@ -1,0 +1,28 @@
+// 20210329153318
+// https://raw.githubusercontent.com/tigranbs/node-typescript-starter-kit/master/tsconfig.json
+
+{
+    "compilerOptions": {
+        "lib": ["es2018", "es5", "dom"],
+        "baseUrl": "./src",
+        "rootDir": "./src",
+        "paths": {
+            "@config": ["./config"],
+            "@controller": ["./controller"]
+        },
+        // "typeRoots": ["./src/types"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "target": "es5",
+        "strict": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./build",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "sourceMap": false
+    },
+    "exclude": ["./node_modules/**/*", "./build/**/*"],
+    "include": ["./src/**/*"]
+}

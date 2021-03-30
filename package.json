@@ -1,0 +1,28 @@
+{
+    "name": "work_recruitment",
+    "version": "1.0.0",
+    "description": "WorkRecruitment",
+    "main": "src/server.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rm -rf build/ && prettier --write source/ && tsc",
+        "start": "nodemon -r tsconfig-paths/register src/server.ts"
+    },
+    "author": "TinNgo",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "eslint-config-prettier": "^8.1.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/express": "^4.17.11",
+        "@typescript-eslint/eslint-plugin": "^4.20.0",
+        "@typescript-eslint/parser": "^4.20.0",
+        "eslint": "^7.23.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "tsconfig-paths": "^3.9.0"
+    }
+}
