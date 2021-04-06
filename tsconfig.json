@@ -1,6 +1,5 @@
 // 20210329153318
 // https://raw.githubusercontent.com/tigranbs/node-typescript-starter-kit/master/tsconfig.json
-
 {
     "compilerOptions": {
         "lib": ["es2018", "es5", "dom"],
@@ -8,7 +7,9 @@
         "rootDir": "./src",
         "paths": {
             "@config": ["./config"],
-            "@controller": ["./controller"]
+            "@controller": ["./controller"],
+            "@interface": ["./interfaces"],
+            "@models": ["'./models"]
         },
         // "typeRoots": ["./src/types"],
         "resolveJsonModule": true,

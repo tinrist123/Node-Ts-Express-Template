@@ -3,7 +3,8 @@
         "es2021": true,
         "node": true
     },
-    "extends": ["airbnb-base", "prettier", "plugin:@typescript-eslint/recommended", "eslint:recommended"],
+    // "extends": ["airbnb-base","prettier",  "plugin:@typescript-eslint/recommended", "eslint:recommended"],
+    "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended", "eslint:recommended"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 12,
@@ -11,6 +12,12 @@
     },
     "plugins": ["@typescript-eslint"],
     "rules": {
+        "quotes": ["error", "double"],
+        // "comma-spacing": ["error", { "before": true, "after": true }],
+        "object-curly-spacing": ["error", "always"],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
+        "@typescript-eslint/no-extra-semi": ["off"],
         "no-empty": ["error", { "allowEmptyCatch": true }],
         "no-constant-condition": "error",
         "linebreak-style": ["error", "unix"],
@@ -27,8 +34,9 @@
                 "mjs": "never"
             }
         ],
+        "camelcase": "warn",
         "import/no-unresolved": "off",
-        "no-console": ["error", { "allow": ["warn", "error", "debug", "info"] }],
+        "no-console": ["off", { "allow": ["warn", "error", "debug", "info"] }],
         "consistent-return": ["warn", { "treatUndefinedAsUnspecified": true }],
         "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }]
     }
